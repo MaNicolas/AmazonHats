@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-WithCsvTestSuite" class="navigator-link">
+              <span class="suite-name border-passed">WithCsvTestSuite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-WithCsvTestSuite" class="navigator-link ">
+                    <span>C:\Users\Nico\eclipse-workspace\amazon-hats\src\test\resources\TestSuites\WithCsvTestSuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-WithCsvTestSuite" class="navigator-link ">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-WithCsvTestSuite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-WithCsvTestSuite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-WithCsvTestSuite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-WithCsvTestSuite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-WithCsvTestSuite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">2 methods,   2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-WithCsvTestSuite" class="hide-methods passed suite-WithCsvTestSuite"> (hide)</a> <!-- hide-methods passed suite-WithCsvTestSuite -->
+                      <a href="#" panel-name="suite-WithCsvTestSuite" class="show-methods passed suite-WithCsvTestSuite"> (show)</a> <!-- show-methods passed suite-WithCsvTestSuite -->
+                    </span>
+                    <div class="method-list-content passed suite-WithCsvTestSuite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-WithCsvTestSuite" title="com.amazon.automationExercice.AutomationExerciceWithCSV" class="method navigator-link" hash-for-method="scenarioUsingCsv({number=1, secondItem=hats for women, quantity1=2, quantity2=1, firstItem=hats for men})">scenarioUsingCsv({number=1, secondItem=hats for women, quantity1=2, quantity2=1, firstItem=hats for men})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-WithCsvTestSuite" title="com.amazon.automationExercice.AutomationExerciceWithCSV" class="method navigator-link" hash-for-method="scenarioUsingCsv({number=1, secondItem=hats for women, quantity1=2, quantity2=1, firstItem=hats for men})">scenarioUsingCsv({number=1, secondItem=hats for women, quantity1=2, quantity2=1, firstItem=hats for men})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-WithCsvTestSuite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-WithCsvTestSuite" class="panel WithCsvTestSuite">
+          <div class="suite-WithCsvTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.amazon.automationExercice.AutomationExerciceWithCSV</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="scenarioUsingCsv({number=1, secondItem=hats for women, quantity1=2, quantity2=1, firstItem=hats for men})">
+                  </a> <!-- scenarioUsingCsv({number=1, secondItem=hats for women, quantity1=2, quantity2=1, firstItem=hats for men}) -->
+                  <span class="method-name">scenarioUsingCsv</span>
+                  <span class="parameters">({number=1, secondItem=hats for women, quantity1=2, quantity2=1, firstItem=hats for men})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="scenarioUsingCsv({number=1, secondItem=hats for women, quantity1=2, quantity2=1, firstItem=hats for men})">
+                  </a> <!-- scenarioUsingCsv({number=1, secondItem=hats for women, quantity1=2, quantity2=1, firstItem=hats for men}) -->
+                  <span class="method-name">scenarioUsingCsv</span>
+                  <span class="parameters">({number=1, secondItem=hats for women, quantity1=2, quantity2=1, firstItem=hats for men})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-WithCsvTestSuite-class-passed -->
+        </div> <!-- panel WithCsvTestSuite -->
+        <div panel-name="test-xml-WithCsvTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\Nico\eclipse-workspace\amazon-hats\src\test\resources\TestSuites\WithCsvTestSuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;WithCsvTestSuite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;AutomationExerciseUsingChrome&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.amazon.automationExercice.AutomationExerciceWithCSV&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- AutomationExerciseUsingChrome --&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;AutomationExerciseUsingFirefox&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.amazon.automationExercice.AutomationExerciceWithCSV&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- AutomationExerciseUsingFirefox --&gt;
+&lt;/suite&gt; &lt;!-- WithCsvTestSuite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-WithCsvTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for WithCsvTestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">AutomationExerciseUsingChrome (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">AutomationExerciseUsingFirefox (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-WithCsvTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for WithCsvTestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-WithCsvTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for WithCsvTestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_WithCsvTestSuite');
+function tableData_WithCsvTestSuite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(2);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'scenarioUsingCsv')
+data.setCell(0, 2, 'com.amazon.automationExercice.AutomationExerciceWithCSV')
+data.setCell(0, 3, 32812);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'scenarioUsingCsv')
+data.setCell(1, 2, 'com.amazon.automationExercice.AutomationExerciceWithCSV')
+data.setCell(1, 3, 32332);
+window.suiteTableData['WithCsvTestSuite']= { tableData: data, tableDiv: 'times-div-WithCsvTestSuite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-WithCsvTestSuite">
+              </div> <!-- times-div-WithCsvTestSuite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-WithCsvTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for WithCsvTestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">scenarioUsingCsv({number=1, secondItem=hats for women, quantity1=2, quantity2=1, firstItem=hats for men})</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Starting test #1</span>
+                <span class="reporter-method-output">Opening page: https://www.amazon.com/</span>
+                <span class="reporter-method-output">Page opened!</span>
+                <span class="reporter-method-output">Searching for item: 'hats for men'.</span>
+                <span class="reporter-method-output">Hat has only one size!</span>
+                <span class="reporter-method-output">Hat's price is: 12.95€</span>
+                <span class="reporter-method-output">Add item(s) to cart!</span>
+                <span class="reporter-method-output">There is a total of : 2 items in the cart.</span>
+                <span class="reporter-method-output">Total price in cart is : 25.90€</span>
+                <span class="reporter-method-output">Searching for item: 'hats for women'.</span>
+                <span class="reporter-method-output">Hat has only one size!</span>
+                <span class="reporter-method-output">Hat's price is: 11.99€</span>
+                <span class="reporter-method-output">Add item(s) to cart!</span>
+                <span class="reporter-method-output">There is a total of : 3 items in the cart.</span>
+                <span class="reporter-method-output">Total price in cart is : 37.89€</span>
+                <span class="reporter-method-output">Change item's quantity from 2 to 1.</span>
+                <span class="reporter-method-output">There is a total of : 2 items in the cart.</span>
+                <span class="reporter-method-output">Total price in cart is : 24.94€</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">scenarioUsingCsv({number=1, secondItem=hats for women, quantity1=2, quantity2=1, firstItem=hats for men})</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Starting test #1</span>
+                <span class="reporter-method-output">Opening page: https://www.amazon.com/</span>
+                <span class="reporter-method-output">Page opened!</span>
+                <span class="reporter-method-output">Searching for item: 'hats for men'.</span>
+                <span class="reporter-method-output">Hat has only one size!</span>
+                <span class="reporter-method-output">Hat's price is: 11.99€</span>
+                <span class="reporter-method-output">Add item(s) to cart!</span>
+                <span class="reporter-method-output">There is a total of : 2 items in the cart.</span>
+                <span class="reporter-method-output">Total price in cart is : 23.98€</span>
+                <span class="reporter-method-output">Searching for item: 'hats for women'.</span>
+                <span class="reporter-method-output">Hat has only one size!</span>
+                <span class="reporter-method-output">Hat's price is: 11.99€</span>
+                <span class="reporter-method-output">Add item(s) to cart!</span>
+                <span class="reporter-method-output">There is a total of : 3 items in the cart.</span>
+                <span class="reporter-method-output">Total price in cart is : 35.97€</span>
+                <span class="reporter-method-output">Same hat for men and women have been selected</span>
+                <span class="reporter-method-output">There is a total of : 2 items in the cart.</span>
+                <span class="reporter-method-output">Total price in cart is : 23.98€</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-WithCsvTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-WithCsvTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.amazon.automationExercice.AutomationExerciceWithCSV</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void com.amazon.automationExercice.AutomationExerciceWithCSV.scenarioUsingCsv(java.util.Map),...)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void com.amazon.automationExercice.AutomationExerciceWithCSV.scenarioUsingCsv(java.util.Map),...)</span>
+                <span class="method-start">197 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">scenarioUsingCsv({number=1, secondItem=hats for women, quantity1=2, quantity2=1, firstItem=hats for men})</span>
+                <span class="method-start">1959 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">scenarioUsingCsv({number=1, secondItem=hats for women, quantity1=2, quantity2=1, firstItem=hats for men})</span>
+                <span class="method-start">1959 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">takeScreenshot([TestResult name=scenarioUsingCsv status=SUCCESS method=AutomationExerciceWithCSV.scenarioUsingCsv(j...)</span>
+                <span class="method-start">34293 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">34293 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">takeScreenshot([TestResult name=scenarioUsingCsv status=SUCCESS method=AutomationExerciceWithCSV.scenarioUsingCsv(j...)</span>
+                <span class="method-start">34772 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">34772 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
