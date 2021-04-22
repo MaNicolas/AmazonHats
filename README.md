@@ -21,7 +21,6 @@ Here’s the steps to reproduce I will follow:
 8. Change the quantity for item selected at step 3 from 2 to 1 item in the cart
 9. Make sure that total price and quantity are changed correctly
 
-++++++++++++++++++++++++++++++++
 Here is a small documentation regarding the setup required and how to launch the tests.
 
 In order to run the test, you'll need the following setup:
