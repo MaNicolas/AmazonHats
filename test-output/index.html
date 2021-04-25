@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-WithCsvTestSuite" class="navigator-link">
-              <span class="suite-name border-passed">WithCsvTestSuite</span>
+              <span class="suite-name border-failed">WithCsvTestSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,26 +91,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">2 methods, 2 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-WithCsvTestSuite" class="hide-methods passed suite-WithCsvTestSuite"> (hide)</a> <!-- hide-methods passed suite-WithCsvTestSuite -->
-                      <a href="#" panel-name="suite-WithCsvTestSuite" class="show-methods passed suite-WithCsvTestSuite"> (show)</a> <!-- show-methods passed suite-WithCsvTestSuite -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-WithCsvTestSuite" class="hide-methods failed suite-WithCsvTestSuite"> (hide)</a> <!-- hide-methods failed suite-WithCsvTestSuite -->
+                      <a href="#" panel-name="suite-WithCsvTestSuite" class="show-methods failed suite-WithCsvTestSuite"> (show)</a> <!-- show-methods failed suite-WithCsvTestSuite -->
                     </span>
-                    <div class="method-list-content passed suite-WithCsvTestSuite">
+                    <div class="method-list-content failed suite-WithCsvTestSuite">
                       <span>
-                        <img src="passed.png" width="3%"/>
+                        <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-WithCsvTestSuite" title="com.amazon.automationExercice.AutomationExerciceWithCSV" class="method navigator-link" hash-for-method="scenarioUsingCsv({number=1, secondItem=hats for women, quantity1=2, quantity2=1, firstItem=hats for men})">scenarioUsingCsv({number=1, secondItem=hats for women, quantity1=2, quantity2=1, firstItem=hats for men})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
+                        <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-WithCsvTestSuite" title="com.amazon.automationExercice.AutomationExerciceWithCSV" class="method navigator-link" hash-for-method="scenarioUsingCsv({number=1, secondItem=hats for women, quantity1=2, quantity2=1, firstItem=hats for men})">scenarioUsingCsv({number=1, secondItem=hats for women, quantity1=2, quantity2=1, firstItem=hats for men})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-WithCsvTestSuite -->
+                    </div> <!-- method-list-content failed suite-WithCsvTestSuite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -122,9 +122,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-WithCsvTestSuite" class="panel WithCsvTestSuite">
-          <div class="suite-WithCsvTestSuite-class-passed">
+          <div class="suite-WithCsvTestSuite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">com.amazon.automationExercice.AutomationExerciceWithCSV</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -134,6 +134,44 @@
                   </a> <!-- scenarioUsingCsv({number=1, secondItem=hats for women, quantity1=2, quantity2=1, firstItem=hats for men}) -->
                   <span class="method-name">scenarioUsingCsv</span>
                   <span class="parameters">({number=1, secondItem=hats for women, quantity1=2, quantity2=1, firstItem=hats for men})</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: (//span[@class=&apos;a-price&apos;])[1] (tried for 3 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.amazon.pages.BasePageObject.waitFor(BasePageObject.java:78)
+	at com.amazon.pages.BasePageObject.waitForVisibilityOf(BasePageObject.java:66)
+	at com.amazon.pages.BasePageObject.find(BasePageObject.java:34)
+	at com.amazon.pages.BasePageObject.click(BasePageObject.java:46)
+	at com.amazon.pages.ResultsPageObject.clickFirstHat(ResultsPageObject.java:20)
+	at com.amazon.automationExercice.AutomationExerciceWithCSV.scenarioUsingCsv(AutomationExerciceWithCSV.java:40)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=90.0.4430.85)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MSI&apos;, ip: &apos;192.168.1.40&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\Nico\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:50859}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2ede203cab1339e0bc38c3d07bd91715
+*** Element info: {Using=xpath, value=(//span[@class=&apos;a-price&apos;])[1]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 26 more
+... Removed 20 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -142,10 +180,36 @@
                   </a> <!-- scenarioUsingCsv({number=1, secondItem=hats for women, quantity1=2, quantity2=1, firstItem=hats for men}) -->
                   <span class="method-name">scenarioUsingCsv</span>
                   <span class="parameters">({number=1, secondItem=hats for women, quantity1=2, quantity2=1, firstItem=hats for men})</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
+from unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=90.0.4430.85)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MSI&apos;, ip: &apos;192.168.1.40&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\Nico\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:50858}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3ff582b4e85d28af33de989f3cabdde1
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.amazon.pages.BasePageObject.click(BasePageObject.java:46)
+	at com.amazon.pages.ResultsPageObject.clickFirstHat(ResultsPageObject.java:20)
+	at com.amazon.automationExercice.AutomationExerciceWithCSV.scenarioUsingCsv(AutomationExerciceWithCSV.java:40)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 20 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-WithCsvTestSuite-class-passed -->
+          </div> <!-- suite-WithCsvTestSuite-class-failed -->
         </div> <!-- panel WithCsvTestSuite -->
         <div panel-name="test-xml-WithCsvTestSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -210,16 +274,16 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'scenarioUsingCsv')
 data.setCell(0, 2, 'com.amazon.automationExercice.AutomationExerciceWithCSV')
-data.setCell(0, 3, 32812);
+data.setCell(0, 3, 10455);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'scenarioUsingCsv')
 data.setCell(1, 2, 'com.amazon.automationExercice.AutomationExerciceWithCSV')
-data.setCell(1, 3, 32332);
+data.setCell(1, 3, 8936);
 window.suiteTableData['WithCsvTestSuite']= { tableData: data, tableDiv: 'times-div-WithCsvTestSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 19 seconds</span>
               <div id="times-div-WithCsvTestSuite">
               </div> <!-- times-div-WithCsvTestSuite -->
             </div> <!-- times-div -->
@@ -237,20 +301,6 @@ return data;
                 <span class="reporter-method-output">Opening page: https://www.amazon.com/</span>
                 <span class="reporter-method-output">Page opened!</span>
                 <span class="reporter-method-output">Searching for item: 'hats for men'.</span>
-                <span class="reporter-method-output">Hat has only one size!</span>
-                <span class="reporter-method-output">Hat's price is: 12.95€</span>
-                <span class="reporter-method-output">Add item(s) to cart!</span>
-                <span class="reporter-method-output">There is a total of : 2 items in the cart.</span>
-                <span class="reporter-method-output">Total price in cart is : 25.90€</span>
-                <span class="reporter-method-output">Searching for item: 'hats for women'.</span>
-                <span class="reporter-method-output">Hat has only one size!</span>
-                <span class="reporter-method-output">Hat's price is: 11.99€</span>
-                <span class="reporter-method-output">Add item(s) to cart!</span>
-                <span class="reporter-method-output">There is a total of : 3 items in the cart.</span>
-                <span class="reporter-method-output">Total price in cart is : 37.89€</span>
-                <span class="reporter-method-output">Change item's quantity from 2 to 1.</span>
-                <span class="reporter-method-output">There is a total of : 2 items in the cart.</span>
-                <span class="reporter-method-output">Total price in cart is : 24.94€</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
@@ -260,20 +310,6 @@ return data;
                 <span class="reporter-method-output">Opening page: https://www.amazon.com/</span>
                 <span class="reporter-method-output">Page opened!</span>
                 <span class="reporter-method-output">Searching for item: 'hats for men'.</span>
-                <span class="reporter-method-output">Hat has only one size!</span>
-                <span class="reporter-method-output">Hat's price is: 11.99€</span>
-                <span class="reporter-method-output">Add item(s) to cart!</span>
-                <span class="reporter-method-output">There is a total of : 2 items in the cart.</span>
-                <span class="reporter-method-output">Total price in cart is : 23.98€</span>
-                <span class="reporter-method-output">Searching for item: 'hats for women'.</span>
-                <span class="reporter-method-output">Hat has only one size!</span>
-                <span class="reporter-method-output">Hat's price is: 11.99€</span>
-                <span class="reporter-method-output">Add item(s) to cart!</span>
-                <span class="reporter-method-output">There is a total of : 3 items in the cart.</span>
-                <span class="reporter-method-output">Total price in cart is : 35.97€</span>
-                <span class="reporter-method-output">Same hat for men and women have been selected</span>
-                <span class="reporter-method-output">There is a total of : 2 items in the cart.</span>
-                <span class="reporter-method-output">Total price in cart is : 23.98€</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -298,31 +334,39 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">setup(public void com.amazon.automationExercice.AutomationExerciceWithCSV.scenarioUsingCsv(java.util.Map),...)</span>
-                <span class="method-start">197 ms</span>
+                <span class="method-start">200 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">scenarioUsingCsv({number=1, secondItem=hats for women, quantity1=2, quantity2=1, firstItem=hats for men})</span>
-                <span class="method-start">1959 ms</span>
+                <span class="method-start">2010 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">scenarioUsingCsv({number=1, secondItem=hats for women, quantity1=2, quantity2=1, firstItem=hats for men})</span>
-                <span class="method-start">1959 ms</span>
+                <span class="method-start">2084 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">takeScreenshot([TestResult name=scenarioUsingCsv status=SUCCESS method=AutomationExerciceWithCSV.scenarioUsingCsv(j...)</span>
-                <span class="method-start">34293 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">takeScreenshot([TestResult name=scenarioUsingCsv status=FAILURE method=AutomationExerciceWithCSV.scenarioUsingCsv(j...)</span>
+                <span class="method-start">11026 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">takeScreenshot([TestResult name=scenarioUsingCsv status=FAILURE method=AutomationExerciceWithCSV.scenarioUsingCsv(j...)</span>
+                <span class="method-start">12468 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">34293 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
-                <span class="method-name">takeScreenshot([TestResult name=scenarioUsingCsv status=SUCCESS method=AutomationExerciceWithCSV.scenarioUsingCsv(j...)</span>
-                <span class="method-start">34772 ms</span>
+                <span class="method-start">12472 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">34772 ms</span>
+                <span class="method-start">15137 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
