@@ -40,8 +40,8 @@ To run the tests:
 - "Run as"
 - TestNG Suite
 
-As for the report, you can find it in the console or under "NuvolarTest\test-output\emailable-report.html",
-"NuvolarTest\test-output\index.html" or finally "NuvolarTest\test-output\testng-results.xml"
+As for the report, you can find it in the console or under "amazon-hats\test-output\emailable-report.html",
+"amazon-hats\test-output\index.html" or finally "amazon-hats\test-output\testng-results.xml"
 
 Please note that throughout my code, you will find those 2 lines:
 log.info("This line is for the console");
