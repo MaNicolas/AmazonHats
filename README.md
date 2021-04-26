@@ -49,6 +49,8 @@ Reporter.log("This one is for the report in html");
 
 I usually only use the "log.info", but I left both of them for your convenience so you can see the logs wherever you want.
 
+The screenshots (in case of test failures) will be under: "amazon-hats\test-output\screenshots".
+
 Finally, if you wish to run the test many times automatically, I left the "@Test(invocationCount = X)" parameter available above the test method's name.
 Just edit this parameter to your liking.
 
