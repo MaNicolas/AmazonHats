@@ -26,8 +26,8 @@ Here is a small documentation regarding the setup required and how to launch the
 In order to run the test, you'll need the following setup:
 - Java version 1.8.0
 - jdk-11.0.6
-- Chrome browser version 88.0.4324.182
-- Firefox browser version 86.0 (64-bit)
+- Chrome browser version 90
+- Firefox browser version 87.0 (64-bit)
 - Eclipse IDE
 
 You will find 3 test suites XML files under "src\test\resources\TestSuites":
