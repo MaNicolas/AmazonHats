@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite thread-count="2" parallel="tests" name="Failed suite [WithCsvTestSuite]" guice-stage="DEVELOPMENT">
   <test thread-count="2" parallel="tests" name="AutomationExerciseUsingFirefox(failed)">
     <classes>
@@ -13,16 +13,4 @@
       </class> <!-- com.amazon.automationExercice.AutomationExerciceWithCSV -->
     </classes>
   </test> <!-- AutomationExerciseUsingFirefox(failed) -->
-  <test thread-count="2" parallel="tests" name="AutomationExerciseUsingChrome(failed)">
-    <classes>
-      <class name="com.amazon.automationExercice.AutomationExerciceWithCSV">
-        <methods>
-          <include name="takeScreenshot"/>
-          <include name="setup"/>
-          <include name="tearDown"/>
-          <include name="scenarioUsingCsv" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- com.amazon.automationExercice.AutomationExerciceWithCSV -->
-    </classes>
-  </test> <!-- AutomationExerciseUsingChrome(failed) -->
 </suite> <!-- Failed suite [WithCsvTestSuite] -->

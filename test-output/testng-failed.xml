@@ -1,41 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="2" parallel="tests" name="Failed suite [AutomationExerciseTestSuite]" guice-stage="DEVELOPMENT">
-  <test thread-count="2" parallel="tests" name="AutomationExerciseUsingFirefox(failed)">
-    <parameter name="quantity1" value="2"/>
-    <parameter name="quantity2" value="1"/>
-    <parameter name="browser" value="firefox"/>
-    <parameter name="quantityToSet" value="1"/>
-    <parameter name="secondItem" value="hats for women"/>
-    <parameter name="quantityToChange" value="2"/>
-    <parameter name="firstItem" value="hats for men"/>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.amazon.automationExercice.AutomationExercise">
+      <class name="com.amazon.automationExercice.AutomationExerciceWithCSV">
         <methods>
           <include name="takeScreenshot"/>
           <include name="setup"/>
-          <include name="scenarioUsingParameters" invocation-numbers="0"/>
           <include name="tearDown"/>
+          <include name="scenarioUsingCsv" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.amazon.automationExercice.AutomationExercise -->
+      </class> <!-- com.amazon.automationExercice.AutomationExerciceWithCSV -->
     </classes>
-  </test> <!-- AutomationExerciseUsingFirefox(failed) -->
-  <test thread-count="2" parallel="tests" name="AutomationExerciseUsingChrome(failed)">
-    <parameter name="quantity1" value="2"/>
-    <parameter name="quantity2" value="1"/>
-    <parameter name="browser" value="chrome"/>
-    <parameter name="quantityToSet" value="1"/>
-    <parameter name="secondItem" value="hats for women"/>
-    <parameter name="firstItem" value="hats for men"/>
-    <classes>
-      <class name="com.amazon.automationExercice.AutomationExercise">
-        <methods>
-          <include name="takeScreenshot"/>
-          <include name="setup"/>
-          <include name="scenarioUsingParameters" invocation-numbers="0"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.amazon.automationExercice.AutomationExercise -->
-    </classes>
-  </test> <!-- AutomationExerciseUsingChrome(failed) -->
-</suite> <!-- Failed suite [AutomationExerciseTestSuite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

@@ -1,5 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
 <title>TestNG Report</title>
@@ -7,163 +7,12 @@
 </head>
 <body>
 <table>
-<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="7">WithCsvTestSuite</th></tr>
-<tr><td><a href="#t0">AutomationExerciseUsingFirefox</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">35 549</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">AutomationExerciseUsingChrome</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">35 924</td><td></td><td></td></tr>
-<tr><th colspan="7">AutomationExerciseTestSuite</th></tr>
-<tr><td><a href="#t2">AutomationExerciseUsingFirefox</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">40 343</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t3">AutomationExerciseUsingChrome</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">40 637</td><td></td><td></td></tr>
-<tr><th colspan="7">MultipleSuite</th></tr>
-<tr><th>Total</th><th class="num">0</th><th class="num">0</th><th class="num attn">4</th><th class="num">152 453</th><th colspan="2"></th></tr>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Default suite</th></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">29 131</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">WithCsvTestSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">AutomationExerciseUsingFirefox &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.amazon.automationExercice.AutomationExerciceWithCSV</td><td><a href="#m0">scenarioUsingCsv</a></td><td rowspan="1">1620246349295</td><td rowspan="1">33088</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">AutomationExerciseUsingChrome &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.amazon.automationExercice.AutomationExerciceWithCSV</td><td><a href="#m1">scenarioUsingCsv</a></td><td rowspan="1">1620246349312</td><td rowspan="1">33450</td></tr></tbody>
-<tbody><tr><th colspan="4">AutomationExerciseTestSuite</th></tr></tbody><tbody id="t2"><tr><th colspan="4">AutomationExerciseUsingFirefox &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.amazon.automationExercice.AutomationExercise</td><td><a href="#m2">scenarioUsingParameters</a></td><td rowspan="1">1620246313156</td><td rowspan="1">32845</td></tr></tbody>
-<tbody id="t3"><tr><th colspan="4">AutomationExerciseUsingChrome &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.amazon.automationExercice.AutomationExercise</td><td><a href="#m3">scenarioUsingParameters</a></td><td rowspan="1">1620246309377</td><td rowspan="1">37502</td></tr></tbody>
-<tbody><tr><th colspan="4">MultipleSuite</th></tr></tbody></table>
-<h2>AutomationExerciseUsingFirefox</h2><h3 id="m0">com.amazon.automationExercice.AutomationExerciceWithCSV#scenarioUsingCsv</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{number=1, secondItem=hats for women, quantity1=2, quantity2=1, firstItem=hats for men}</td></tr><tr><th>Messages</th></tr><tr><td><div class="messages">Starting test #1<br/>Opening page: https://www.amazon.com/<br/>Page opened!<br/>Searching for item: 'hats for men'.<br/>Hat has only one size!<br/>Hat's price is: 19.99€<br/>Add item(s) to cart!<br/>There is a total of : 2 items in the cart.<br/>Total price in cart is : 39.98€<br/>Searching for item: 'hats for women'.<br/>Hat has only one size!<br/>Hat's price is: 11.99€<br/>Add item(s) to cart!<br/>There is a total of : 3 items in the cart.<br/>Total price in cart is : 51.97€<br/>Change item's quantity from 2 to 1.</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: (//input[@value=&apos;Delete&apos;])[1] (tried for 5 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at com.amazon.pages.BasePageObject.waitForElementToBeClickable(BasePageObject.java:84)
-	at com.amazon.pages.CartPageObject.changeNumberOfItem(CartPageObject.java:70)
-	at com.amazon.automationExercice.AutomationExerciceWithCSV.scenarioUsingCsv(AutomationExerciceWithCSV.java:88)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//input[@value=&apos;Delete&apos;])[1]&quot;}
-  (Session info: chrome=90.0.4430.93)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;MSI&apos;, ip: &apos;192.168.1.40&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\Nico\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:50519}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: a1ff1c60e65a3d6bc5b6e75d1197a9af
-*** Element info: {Using=xpath, value=(//input[@value=&apos;Delete&apos;])[1]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	... 23 more
-... Removed 19 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>AutomationExerciseUsingChrome</h2><h3 id="m1">com.amazon.automationExercice.AutomationExerciceWithCSV#scenarioUsingCsv</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{number=1, secondItem=hats for women, quantity1=2, quantity2=1, firstItem=hats for men}</td></tr><tr><th>Messages</th></tr><tr><td><div class="messages">Starting test #1<br/>Opening page: https://www.amazon.com/<br/>Page opened!<br/>Searching for item: 'hats for men'.<br/>Hat has only one size!<br/>Hat's price is: 19.99€<br/>Add item(s) to cart!<br/>There is a total of : 2 items in the cart.<br/>Total price in cart is : 39.98€<br/>Searching for item: 'hats for women'.<br/>Hat has only one size!<br/>Hat's price is: 11.99€<br/>Add item(s) to cart!<br/>There is a total of : 3 items in the cart.<br/>Total price in cart is : 51.97€<br/>Change item's quantity from 2 to 1.</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: (//input[@value=&apos;Delete&apos;])[1] (tried for 5 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at com.amazon.pages.BasePageObject.waitForElementToBeClickable(BasePageObject.java:84)
-	at com.amazon.pages.CartPageObject.changeNumberOfItem(CartPageObject.java:70)
-	at com.amazon.automationExercice.AutomationExerciceWithCSV.scenarioUsingCsv(AutomationExerciceWithCSV.java:88)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//input[@value=&apos;Delete&apos;])[1]&quot;}
-  (Session info: chrome=90.0.4430.93)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;MSI&apos;, ip: &apos;192.168.1.40&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\Nico\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:50518}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: a620c9f1924f8c4d6eb881f03c2b2717
-*** Element info: {Using=xpath, value=(//input[@value=&apos;Delete&apos;])[1]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	... 23 more
-... Removed 19 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>AutomationExerciseUsingFirefox</h2><h3 id="m2">com.amazon.automationExercice.AutomationExercise#scenarioUsingParameters</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>hats for men</td><td>2</td><td>hats for women</td><td>1</td><td>1</td></tr><tr><th colspan="5">Messages</th></tr><tr><td colspan="5"><div class="messages">Starting scenario!<br/>Opening page: https://www.amazon.com/<br/>Page opened!<br/>Searching for item: 'hats for men'.<br/>Hat has only one size!<br/>Hat's price is: 19.99€<br/>Add item(s) to cart!<br/>There is a total of : 2 items in the cart.<br/>Total price in cart is : 39.98€<br/>Searching for item: 'hats for women'.<br/>Hat has only one size!<br/>Hat's price is: 11.99€<br/>Add item(s) to cart!<br/>There is a total of : 3 items in the cart.<br/>Total price in cart is : 51.97€<br/>Change item's quantity from 2 to 1.</div></td></tr><tr><th colspan="5">Exception</th></tr><tr><td colspan="5"><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: (//input[@value=&apos;Delete&apos;])[1] (tried for 5 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at com.amazon.pages.BasePageObject.waitForElementToBeClickable(BasePageObject.java:84)
-	at com.amazon.pages.CartPageObject.changeNumberOfItem(CartPageObject.java:70)
-	at com.amazon.automationExercice.AutomationExercise.scenarioUsingParameters(AutomationExercise.java:81)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: (//input[@value=&apos;Delete&apos;])[1]
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;MSI&apos;, ip: &apos;192.168.1.40&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.6&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 87.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210318103112, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 17004, moz:profile: C:\Users\Nico\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: bffb7d6c-3cd5-43c2-8bb1-6a83f371358b
-*** Element info: {Using=xpath, value=(//input[@value=&apos;Delete&apos;])[1]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	... 23 more
-... Removed 19 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>AutomationExerciseUsingChrome</h2><h3 id="m3">com.amazon.automationExercice.AutomationExercise#scenarioUsingParameters</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>hats for men</td><td>2</td><td>hats for women</td><td>1</td><td>1</td></tr><tr><th colspan="5">Messages</th></tr><tr><td colspan="5"><div class="messages">Starting scenario!<br/>Opening page: https://www.amazon.com/<br/>Page opened!<br/>Searching for item: 'hats for men'.<br/>User needs to select a size!<br/>Hat's price is: 11.99€<br/>Size is available AND sold by amazon!<br/>Hat's price is: 11.99€<br/>Add item(s) to cart!<br/>There is a total of : 2 items in the cart.<br/>Total price in cart is : 23.98€<br/>Searching for item: 'hats for women'.<br/>Hat has only one size!<br/>Hat's price is: 11.99€<br/>Add item(s) to cart!<br/>There is a total of : 3 items in the cart.<br/>Total price in cart is : 35.97€<br/>Change item's quantity from 2 to 1.</div></td></tr><tr><th colspan="5">Exception</th></tr><tr><td colspan="5"><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: (//input[@value=&apos;Delete&apos;])[1] (tried for 5 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at com.amazon.pages.BasePageObject.waitForElementToBeClickable(BasePageObject.java:84)
-	at com.amazon.pages.CartPageObject.changeNumberOfItem(CartPageObject.java:70)
-	at com.amazon.automationExercice.AutomationExercise.scenarioUsingParameters(AutomationExercise.java:81)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//input[@value=&apos;Delete&apos;])[1]&quot;}
-  (Session info: chrome=90.0.4430.93)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;MSI&apos;, ip: &apos;192.168.1.40&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\Nico\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:50236}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 47adb1d381c137acd2023a36682cdb28
-*** Element info: {Using=xpath, value=(//input[@value=&apos;Delete&apos;])[1]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	... 23 more
-... Removed 19 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.amazon.automationExercice.AutomationExerciceWithCSV</td><td><a href="#m0">scenarioUsingCsv</a></td><td rowspan="1">1620316726940</td><td rowspan="1">26044</td></tr></tbody>
+</table>
+<h2>Default test</h2><h3 id="m0">com.amazon.automationExercice.AutomationExerciceWithCSV#scenarioUsingCsv</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{number=1, secondItem=hats for women, quantity1=2, quantity2=1, firstItem=hats for men}</td></tr><tr><th>Messages</th></tr><tr><td><div class="messages">Starting test #1<br/>Opening page: https://www.amazon.com/<br/>Page opened!<br/>Searching for item: 'hats for men'.<br/>User needs to select a size!<br/>Hat's price is: 11.99€<br/>Size is available AND sold by amazon!<br/>Hat's price is: 11.99€<br/>Add item(s) to cart!<br/>There is a total of : 2 items in the cart.<br/>Total price in cart is : 23.98€<br/>Searching for item: 'hats for women'.<br/>Hat has only one size!<br/>Hat's price is: 18.99€<br/>Add item(s) to cart!<br/>There is a total of : 3 items in the cart.<br/>Total price in cart is : 42.97€<br/>Change item's quantity from 2 to 1.<br/>There is a total of : 2 items in the cart.<br/>Total price in cart is : 30.98€</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
