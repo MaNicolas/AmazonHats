@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">3 suites, 4 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -118,6 +118,90 @@
           </div> <!-- navigator-suite-content -->
         </div> <!-- rounded-window -->
       </div> <!-- suite -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-AutomationExerciseTestSuite" class="navigator-link">
+              <span class="suite-name border-failed">AutomationExerciseTestSuite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-AutomationExerciseTestSuite" class="navigator-link ">
+                    <span>C:\Users\Nico\eclipse-workspace\amazon-hats\src\test\resources\TestSuites\AutomationExerciseTestSuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-AutomationExerciseTestSuite" class="navigator-link ">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-AutomationExerciseTestSuite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-AutomationExerciseTestSuite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-AutomationExerciseTestSuite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-AutomationExerciseTestSuite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-AutomationExerciseTestSuite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">2 methods, 2 failed,   </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-AutomationExerciseTestSuite" class="hide-methods failed suite-AutomationExerciseTestSuite"> (hide)</a> <!-- hide-methods failed suite-AutomationExerciseTestSuite -->
+                      <a href="#" panel-name="suite-AutomationExerciseTestSuite" class="show-methods failed suite-AutomationExerciseTestSuite"> (show)</a> <!-- show-methods failed suite-AutomationExerciseTestSuite -->
+                    </span>
+                    <div class="method-list-content failed suite-AutomationExerciseTestSuite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AutomationExerciseTestSuite" title="com.amazon.automationExercice.AutomationExercise" class="method navigator-link" hash-for-method="scenarioUsingParameters(hats for men, 2, hats for women, 1, 1)">scenarioUsingParameters(hats for men, 2, hats for women, 1, 1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AutomationExerciseTestSuite" title="com.amazon.automationExercice.AutomationExercise" class="method navigator-link" hash-for-method="scenarioUsingParameters(hats for men, 2, hats for women, 1, 1)">scenarioUsingParameters(hats for men, 2, hats for women, 1, 1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-AutomationExerciseTestSuite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
@@ -134,28 +218,25 @@
                   </a> <!-- scenarioUsingCsv({number=1, secondItem=hats for women, quantity1=2, quantity2=1, firstItem=hats for men}) -->
                   <span class="method-name">scenarioUsingCsv</span>
                   <span class="parameters">({number=1, secondItem=hats for women, quantity1=2, quantity2=1, firstItem=hats for men})</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: (//span[@class=&apos;a-price&apos;])[1] (tried for 3 second(s) with 500 milliseconds interval)
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: (//input[@value=&apos;Delete&apos;])[1] (tried for 5 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at com.amazon.pages.BasePageObject.waitFor(BasePageObject.java:78)
-	at com.amazon.pages.BasePageObject.waitForVisibilityOf(BasePageObject.java:66)
-	at com.amazon.pages.BasePageObject.find(BasePageObject.java:34)
-	at com.amazon.pages.BasePageObject.click(BasePageObject.java:46)
-	at com.amazon.pages.ResultsPageObject.clickFirstHat(ResultsPageObject.java:20)
-	at com.amazon.automationExercice.AutomationExerciceWithCSV.scenarioUsingCsv(AutomationExerciceWithCSV.java:40)
+	at com.amazon.pages.BasePageObject.waitForElementToBeClickable(BasePageObject.java:84)
+	at com.amazon.pages.CartPageObject.changeNumberOfItem(CartPageObject.java:70)
+	at com.amazon.automationExercice.AutomationExerciceWithCSV.scenarioUsingCsv(AutomationExerciceWithCSV.java:88)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=90.0.4430.85)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//input[@value=&apos;Delete&apos;])[1]&quot;}
+  (Session info: chrome=90.0.4430.93)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;MSI&apos;, ip: &apos;192.168.1.40&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.6&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\Nico\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:50859}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 2ede203cab1339e0bc38c3d07bd91715
-*** Element info: {Using=xpath, value=(//span[@class=&apos;a-price&apos;])[1]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\Nico\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:50519}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a1ff1c60e65a3d6bc5b6e75d1197a9af
+*** Element info: {Using=xpath, value=(//input[@value=&apos;Delete&apos;])[1]}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -168,9 +249,11 @@ Session ID: 2ede203cab1339e0bc38c3d07bd91715
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
 	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	... 26 more
-... Removed 20 stack frames
+	... 23 more
+... Removed 19 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -180,37 +263,149 @@ Session ID: 2ede203cab1339e0bc38c3d07bd91715
                   </a> <!-- scenarioUsingCsv({number=1, secondItem=hats for women, quantity1=2, quantity2=1, firstItem=hats for men}) -->
                   <span class="method-name">scenarioUsingCsv</span>
                   <span class="parameters">({number=1, secondItem=hats for women, quantity1=2, quantity2=1, firstItem=hats for men})</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
-from unknown error: cannot determine loading status
-from disconnected: received Inspector.detached event
-  (Session info: chrome=90.0.4430.85)
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: (//input[@value=&apos;Delete&apos;])[1] (tried for 5 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.amazon.pages.BasePageObject.waitForElementToBeClickable(BasePageObject.java:84)
+	at com.amazon.pages.CartPageObject.changeNumberOfItem(CartPageObject.java:70)
+	at com.amazon.automationExercice.AutomationExerciceWithCSV.scenarioUsingCsv(AutomationExerciceWithCSV.java:88)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//input[@value=&apos;Delete&apos;])[1]&quot;}
+  (Session info: chrome=90.0.4430.93)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;MSI&apos;, ip: &apos;192.168.1.40&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.6&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\Nico\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:50858}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 3ff582b4e85d28af33de989f3cabdde1
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\Nico\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:50518}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a620c9f1924f8c4d6eb881f03c2b2717
+*** Element info: {Using=xpath, value=(//input[@value=&apos;Delete&apos;])[1]}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at com.amazon.pages.BasePageObject.click(BasePageObject.java:46)
-	at com.amazon.pages.ResultsPageObject.clickFirstHat(ResultsPageObject.java:20)
-	at com.amazon.automationExercice.AutomationExerciceWithCSV.scenarioUsingCsv(AutomationExerciceWithCSV.java:40)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-... Removed 20 stack frames
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 23 more
+... Removed 19 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-WithCsvTestSuite-class-failed -->
         </div> <!-- panel WithCsvTestSuite -->
+        <div panel-name="suite-AutomationExerciseTestSuite" class="panel AutomationExerciseTestSuite">
+          <div class="suite-AutomationExerciseTestSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.amazon.automationExercice.AutomationExercise</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="scenarioUsingParameters(hats for men, 2, hats for women, 1, 1)">
+                  </a> <!-- scenarioUsingParameters(hats for men, 2, hats for women, 1, 1) -->
+                  <span class="method-name">scenarioUsingParameters</span>
+                  <span class="parameters">(hats for men, 2, hats for women, 1, 1)</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: (//input[@value=&apos;Delete&apos;])[1] (tried for 5 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.amazon.pages.BasePageObject.waitForElementToBeClickable(BasePageObject.java:84)
+	at com.amazon.pages.CartPageObject.changeNumberOfItem(CartPageObject.java:70)
+	at com.amazon.automationExercice.AutomationExercise.scenarioUsingParameters(AutomationExercise.java:81)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: (//input[@value=&apos;Delete&apos;])[1]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MSI&apos;, ip: &apos;192.168.1.40&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.6&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 87.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210318103112, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 17004, moz:profile: C:\Users\Nico\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: bffb7d6c-3cd5-43c2-8bb1-6a83f371358b
+*** Element info: {Using=xpath, value=(//input[@value=&apos;Delete&apos;])[1]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 23 more
+... Removed 19 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="scenarioUsingParameters(hats for men, 2, hats for women, 1, 1)">
+                  </a> <!-- scenarioUsingParameters(hats for men, 2, hats for women, 1, 1) -->
+                  <span class="method-name">scenarioUsingParameters</span>
+                  <span class="parameters">(hats for men, 2, hats for women, 1, 1)</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: (//input[@value=&apos;Delete&apos;])[1] (tried for 5 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.amazon.pages.BasePageObject.waitForElementToBeClickable(BasePageObject.java:84)
+	at com.amazon.pages.CartPageObject.changeNumberOfItem(CartPageObject.java:70)
+	at com.amazon.automationExercice.AutomationExercise.scenarioUsingParameters(AutomationExercise.java:81)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//input[@value=&apos;Delete&apos;])[1]&quot;}
+  (Session info: chrome=90.0.4430.93)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MSI&apos;, ip: &apos;192.168.1.40&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\Nico\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:50236}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 47adb1d381c137acd2023a36682cdb28
+*** Element info: {Using=xpath, value=(//input[@value=&apos;Delete&apos;])[1]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 23 more
+... Removed 19 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AutomationExerciseTestSuite-class-failed -->
+        </div> <!-- panel AutomationExerciseTestSuite -->
+        <div panel-name="suite-MultipleSuite" class="panel MultipleSuite">
+        </div> <!-- panel MultipleSuite -->
         <div panel-name="test-xml-WithCsvTestSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">C:\Users\Nico\eclipse-workspace\amazon-hats\src\test\resources\TestSuites\WithCsvTestSuite.xml</span>
@@ -234,6 +429,59 @@ Session ID: 3ff582b4e85d28af33de989f3cabdde1
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
+        <div panel-name="test-xml-AutomationExerciseTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\Nico\eclipse-workspace\amazon-hats\src\test\resources\TestSuites\AutomationExerciseTestSuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;AutomationExerciseTestSuite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;AutomationExerciseUsingChrome&quot;&gt;
+    &lt;parameter name=&quot;quantity1&quot; value=&quot;2&quot;/&gt;
+    &lt;parameter name=&quot;quantity2&quot; value=&quot;1&quot;/&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;parameter name=&quot;quantityToSet&quot; value=&quot;1&quot;/&gt;
+    &lt;parameter name=&quot;secondItem&quot; value=&quot;hats for women&quot;/&gt;
+    &lt;parameter name=&quot;firstItem&quot; value=&quot;hats for men&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.amazon.automationExercice.AutomationExercise&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- AutomationExerciseUsingChrome --&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;AutomationExerciseUsingFirefox&quot;&gt;
+    &lt;parameter name=&quot;quantity1&quot; value=&quot;2&quot;/&gt;
+    &lt;parameter name=&quot;quantity2&quot; value=&quot;1&quot;/&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
+    &lt;parameter name=&quot;quantityToSet&quot; value=&quot;1&quot;/&gt;
+    &lt;parameter name=&quot;secondItem&quot; value=&quot;hats for women&quot;/&gt;
+    &lt;parameter name=&quot;quantityToChange&quot; value=&quot;2&quot;/&gt;
+    &lt;parameter name=&quot;firstItem&quot; value=&quot;hats for men&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.amazon.automationExercice.AutomationExercise&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- AutomationExerciseUsingFirefox --&gt;
+&lt;/suite&gt; &lt;!-- AutomationExerciseTestSuite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="test-xml-MultipleSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\Nico\eclipse-workspace\amazon-hats\src\test\resources\TestSuites\AllTests.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;MultipleSuite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;suite-files&gt;
+    &lt;suite-file path=&quot;AutomationExerciseTestSuite.xml&quot;/&gt;
+    &lt;suite-file path=&quot;WithCsvTestSuite.xml&quot;/&gt;
+  &lt;/suite-files&gt;
+&lt;/suite&gt; &lt;!-- MultipleSuite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
         <div panel-name="testlist-WithCsvTestSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Tests for WithCsvTestSuite</span>
@@ -249,9 +497,47 @@ Session ID: 3ff582b4e85d28af33de989f3cabdde1
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
+        <div panel-name="testlist-AutomationExerciseTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for AutomationExerciseTestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">AutomationExerciseUsingChrome (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">AutomationExerciseUsingFirefox (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-MultipleSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for MultipleSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
         <div panel-name="group-WithCsvTestSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Groups for WithCsvTestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-AutomationExerciseTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for AutomationExerciseTestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-MultipleSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for MultipleSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -274,18 +560,75 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'scenarioUsingCsv')
 data.setCell(0, 2, 'com.amazon.automationExercice.AutomationExerciceWithCSV')
-data.setCell(0, 3, 10455);
+data.setCell(0, 3, 33450);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'scenarioUsingCsv')
 data.setCell(1, 2, 'com.amazon.automationExercice.AutomationExerciceWithCSV')
-data.setCell(1, 3, 8936);
+data.setCell(1, 3, 33088);
 window.suiteTableData['WithCsvTestSuite']= { tableData: data, tableDiv: 'times-div-WithCsvTestSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 19 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-WithCsvTestSuite">
               </div> <!-- times-div-WithCsvTestSuite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-AutomationExerciseTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for AutomationExerciseTestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_AutomationExerciseTestSuite');
+function tableData_AutomationExerciseTestSuite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(2);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'scenarioUsingParameters')
+data.setCell(0, 2, 'com.amazon.automationExercice.AutomationExercise')
+data.setCell(0, 3, 37502);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'scenarioUsingParameters')
+data.setCell(1, 2, 'com.amazon.automationExercice.AutomationExercise')
+data.setCell(1, 3, 32845);
+window.suiteTableData['AutomationExerciseTestSuite']= { tableData: data, tableDiv: 'times-div-AutomationExerciseTestSuite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-AutomationExerciseTestSuite">
+              </div> <!-- times-div-AutomationExerciseTestSuite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-MultipleSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for MultipleSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_MultipleSuite');
+function tableData_MultipleSuite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(0);
+window.suiteTableData['MultipleSuite']= { tableData: data, tableDiv: 'times-div-MultipleSuite'}
+return data;
+}
+              </script>
+              <div id="times-div-MultipleSuite">
+              </div> <!-- times-div-MultipleSuite -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
@@ -301,6 +644,18 @@ return data;
                 <span class="reporter-method-output">Opening page: https://www.amazon.com/</span>
                 <span class="reporter-method-output">Page opened!</span>
                 <span class="reporter-method-output">Searching for item: 'hats for men'.</span>
+                <span class="reporter-method-output">Hat has only one size!</span>
+                <span class="reporter-method-output">Hat's price is: 19.99€</span>
+                <span class="reporter-method-output">Add item(s) to cart!</span>
+                <span class="reporter-method-output">There is a total of : 2 items in the cart.</span>
+                <span class="reporter-method-output">Total price in cart is : 39.98€</span>
+                <span class="reporter-method-output">Searching for item: 'hats for women'.</span>
+                <span class="reporter-method-output">Hat has only one size!</span>
+                <span class="reporter-method-output">Hat's price is: 11.99€</span>
+                <span class="reporter-method-output">Add item(s) to cart!</span>
+                <span class="reporter-method-output">There is a total of : 3 items in the cart.</span>
+                <span class="reporter-method-output">Total price in cart is : 51.97€</span>
+                <span class="reporter-method-output">Change item's quantity from 2 to 1.</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
@@ -310,11 +665,95 @@ return data;
                 <span class="reporter-method-output">Opening page: https://www.amazon.com/</span>
                 <span class="reporter-method-output">Page opened!</span>
                 <span class="reporter-method-output">Searching for item: 'hats for men'.</span>
+                <span class="reporter-method-output">Hat has only one size!</span>
+                <span class="reporter-method-output">Hat's price is: 19.99€</span>
+                <span class="reporter-method-output">Add item(s) to cart!</span>
+                <span class="reporter-method-output">There is a total of : 2 items in the cart.</span>
+                <span class="reporter-method-output">Total price in cart is : 39.98€</span>
+                <span class="reporter-method-output">Searching for item: 'hats for women'.</span>
+                <span class="reporter-method-output">Hat has only one size!</span>
+                <span class="reporter-method-output">Hat's price is: 11.99€</span>
+                <span class="reporter-method-output">Add item(s) to cart!</span>
+                <span class="reporter-method-output">There is a total of : 3 items in the cart.</span>
+                <span class="reporter-method-output">Total price in cart is : 51.97€</span>
+                <span class="reporter-method-output">Change item's quantity from 2 to 1.</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
+        <div panel-name="reporter-AutomationExerciseTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for AutomationExerciseTestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">scenarioUsingParameters(hats for men, 2, hats for women, 1, 1)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Starting scenario!</span>
+                <span class="reporter-method-output">Opening page: https://www.amazon.com/</span>
+                <span class="reporter-method-output">Page opened!</span>
+                <span class="reporter-method-output">Searching for item: 'hats for men'.</span>
+                <span class="reporter-method-output">Hat has only one size!</span>
+                <span class="reporter-method-output">Hat's price is: 19.99€</span>
+                <span class="reporter-method-output">Add item(s) to cart!</span>
+                <span class="reporter-method-output">There is a total of : 2 items in the cart.</span>
+                <span class="reporter-method-output">Total price in cart is : 39.98€</span>
+                <span class="reporter-method-output">Searching for item: 'hats for women'.</span>
+                <span class="reporter-method-output">Hat has only one size!</span>
+                <span class="reporter-method-output">Hat's price is: 11.99€</span>
+                <span class="reporter-method-output">Add item(s) to cart!</span>
+                <span class="reporter-method-output">There is a total of : 3 items in the cart.</span>
+                <span class="reporter-method-output">Total price in cart is : 51.97€</span>
+                <span class="reporter-method-output">Change item's quantity from 2 to 1.</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">scenarioUsingParameters(hats for men, 2, hats for women, 1, 1)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Starting scenario!</span>
+                <span class="reporter-method-output">Opening page: https://www.amazon.com/</span>
+                <span class="reporter-method-output">Page opened!</span>
+                <span class="reporter-method-output">Searching for item: 'hats for men'.</span>
+                <span class="reporter-method-output">User needs to select a size!</span>
+                <span class="reporter-method-output">Hat's price is: 11.99€</span>
+                <span class="reporter-method-output">Size is available AND sold by amazon!</span>
+                <span class="reporter-method-output">Hat's price is: 11.99€</span>
+                <span class="reporter-method-output">Add item(s) to cart!</span>
+                <span class="reporter-method-output">There is a total of : 2 items in the cart.</span>
+                <span class="reporter-method-output">Total price in cart is : 23.98€</span>
+                <span class="reporter-method-output">Searching for item: 'hats for women'.</span>
+                <span class="reporter-method-output">Hat has only one size!</span>
+                <span class="reporter-method-output">Hat's price is: 11.99€</span>
+                <span class="reporter-method-output">Add item(s) to cart!</span>
+                <span class="reporter-method-output">There is a total of : 3 items in the cart.</span>
+                <span class="reporter-method-output">Total price in cart is : 35.97€</span>
+                <span class="reporter-method-output">Change item's quantity from 2 to 1.</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-MultipleSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for MultipleSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
         <div panel-name="ignored-methods-WithCsvTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-AutomationExerciseTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-MultipleSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
@@ -334,40 +773,88 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">setup(public void com.amazon.automationExercice.AutomationExerciceWithCSV.scenarioUsingCsv(java.util.Map),...)</span>
-                <span class="method-start">200 ms</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">scenarioUsingCsv({number=1, secondItem=hats for women, quantity1=2, quantity2=1, firstItem=hats for men})</span>
-                <span class="method-start">2010 ms</span>
+                <span class="method-start">1422 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">scenarioUsingCsv({number=1, secondItem=hats for women, quantity1=2, quantity2=1, firstItem=hats for men})</span>
-                <span class="method-start">2084 ms</span>
+                <span class="method-start">1439 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">takeScreenshot([TestResult name=scenarioUsingCsv status=FAILURE method=AutomationExerciceWithCSV.scenarioUsingCsv(j...)</span>
-                <span class="method-start">11026 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">takeScreenshot([TestResult name=scenarioUsingCsv status=FAILURE method=AutomationExerciceWithCSV.scenarioUsingCsv(j...)</span>
-                <span class="method-start">12468 ms</span>
+                <span class="method-start">34513 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">12472 ms</span>
+                <span class="method-start">34807 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">takeScreenshot([TestResult name=scenarioUsingCsv status=FAILURE method=AutomationExerciceWithCSV.scenarioUsingCsv(j...)</span>
+                <span class="method-start">34894 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">15137 ms</span>
+                <span class="method-start">35205 ms</span>
               </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-AutomationExerciseTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.amazon.automationExercice.AutomationExercise</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void com.amazon.automationExercice.AutomationExercise.scenarioUsingParameters(java.lang.Strin...)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void com.amazon.automationExercice.AutomationExercise.scenarioUsingParameters(java.lang.Strin...)</span>
+                <span class="method-start">225 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">scenarioUsingParameters(hats for men, 2, hats for women, 1, 1)</span>
+                <span class="method-start">1823 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">scenarioUsingParameters(hats for men, 2, hats for women, 1, 1)</span>
+                <span class="method-start">5602 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">takeScreenshot([TestResult name=scenarioUsingParameters status=FAILURE method=AutomationExercise.scenarioUsingParam...)</span>
+                <span class="method-start">38452 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">38646 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">takeScreenshot([TestResult name=scenarioUsingParameters status=FAILURE method=AutomationExercise.scenarioUsingParam...)</span>
+                <span class="method-start">39328 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">39561 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-MultipleSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
